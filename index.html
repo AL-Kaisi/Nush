@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Marketing - Restaurant Photography & Social Media Specialist | London</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Leaflet for Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="img/Vision.png" alt="Vision Marketing" class="logo">
+                <span class="logo-text">Vision Marketing</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#location" class="nav-link">Location</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link contact-btn">Get Quote</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Delicious</span> Food Photography<br>
+                        & Social Media Marketing
+                    </h1>
+                    <p class="hero-subtitle">
+                        London's premier freelance specialist helping restaurants showcase their culinary creations 
+                        and grow their customer base through stunning photography and strategic social media campaigns.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <i class="fas fa-camera"></i>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            Get Free Quote
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Happy Restaurants</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">250%</span>
+                            <span class="stat-label">Avg. Engagement Boost</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#services" class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What I Do Best</h2>
+                <p class="section-subtitle">Specialized services to make your restaurant irresistible</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <h3>Food Photography</h3>
+                    <p>Mouth-watering professional photography that makes your dishes look absolutely irresistible and drives customer appetite.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Studio & on-location shoots</li>
+                        <li><i class="fas fa-check"></i> Menu photography</li>
+                        <li><i class="fas fa-check"></i> Social media content</li>
+                        <li><i class="fas fa-check"></i> Professional editing</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Social Media Management</h3>
+                    <p>Strategic Instagram and Facebook campaigns that showcase your restaurant and attract hungry customers to your tables.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Content strategy & planning</li>
+                        <li><i class="fas fa-check"></i> Daily posting & engagement</li>
+                        <li><i class="fas fa-check"></i> Hashtag optimization</li>
+                        <li><i class="fas fa-check"></i> Analytics & reporting</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Restaurant Branding</h3>
+                    <p>Complete visual identity and marketing strategies designed specifically for restaurants and food service businesses.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Brand photography</li>
+                        <li><i class="fas fa-check"></i> Menu design</li>
+                        <li><i class="fas fa-check"></i> Marketing materials</li>
+                        <li><i class="fas fa-check"></i> Local SEO optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recent Work</h2>
+                <p class="section-subtitle">See how I've helped London restaurants grow</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="img/coca.jpeg" alt="Gourmet Burger Photography">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Bella Vista Italian</h3>
+                                <p>Complete menu photography & Instagram makeover</p>
+                                <div class="portfolio-stats">
+                                    <span><i class="fas fa-heart"></i> +300% engagement</span>
+                                    <span><i class="fas fa-users"></i> +250% followers</span>
+                                </div>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="img/background.jpg" alt="Fine Dining Photography">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>The Golden Spoon</h3>
+                                <p>Fine dining photography & social strategy</p>
+                                <div class="portfolio-stats">
+                                    <span><i class="fas fa-chart-line"></i> +180% bookings</span>
+                                    <span><i class="fas fa-star"></i> 5-star reviews</span>
+                                </div>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <img src="img/tech.jpg" alt="Pizza Restaurant Campaign">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Mario's Pizzeria</h3>
+                                <p>Grand opening photography campaign</p>
+                                <div class="portfolio-stats">
+                                    <span><i class="fas fa-pizza-slice"></i> Sold out opening week</span>
+                                    <span><i class="fas fa-thumbs-up"></i> Viral posts</span>
+                                </div>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="portfolio-image">
+                        <img src="img/circuit.jpg" alt="Cafe Branding">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Sunrise Cafe</h3>
+                                <p>Complete brand photography & social setup</p>
+                                <div class="portfolio-stats">
+                                    <span><i class="fas fa-coffee"></i> +400% Instagram reach</span>
+                                    <span><i class="fas fa-clock"></i> Reduced wait times</span>
+                                </div>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-cta">
+                <h3>Ready to showcase your restaurant?</h3>
+                <p>Let's create stunning content that fills your tables</p>
+                <a href="#contact" class="btn btn-primary">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Serving London</h2>
+                <p class="section-subtitle">Available for shoots across Greater London</p>
+            </div>
+            
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Coverage Area</h3>
+                        <p>I provide on-location photography and marketing services throughout Greater London, including Central London, Canary Wharf, Camden, Shoreditch, and surrounding boroughs.</p>
+                        <ul class="location-features">
+                            <li><i class="fas fa-check"></i> Central London</li>
+                            <li><i class="fas fa-check"></i> East London (Shoreditch, Canary Wharf)</li>
+                            <li><i class="fas fa-check"></i> North London (Camden, Islington)</li>
+                            <li><i class="fas fa-check"></i> South London (Borough, Clapham)</li>
+                            <li><i class="fas fa-check"></i> West London (Notting Hill, Chelsea)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div id="london-map" class="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/Vision.png" alt="About Vision Marketing">
+                    <div class="about-badge">
+                        <i class="fas fa-camera"></i>
+                        <span>6+ Years Experience</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-intro">
+                        Hi! I'm a passionate freelance marketing specialist dedicated to helping London restaurants 
+                        thrive in the digital world. With over 6 years of experience in food photography and social 
+                        media marketing, I understand exactly what makes people crave your dishes and visit your restaurant.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Proven Results</h4>
+                                <p>My clients see an average 250% increase in social media engagement and 40% boost in reservations.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Personal Touch</h4>
+                                <p>As a freelancer, you get my personal attention and customized strategies for your unique restaurant.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Photography Expertise</h4>
+                                <p>Specialized in food photography that makes dishes look irresistible and drives customer appetite.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-quote">
+                        <blockquote>
+                            "I believe every restaurant has a unique story to tell. My job is to capture that story through 
+                            beautiful photography and strategic marketing that brings customers through your doors."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Ready to grow your restaurant? Get in touch for a free consultation</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+44 20 7123 FOOD</p>
+                        <a href="tel:+442071234663" class="contact-link">Call Now</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>hello@visionmarketing.london</p>
+                        <a href="mailto:hello@visionmarketing.london" class="contact-link">Send Email</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3>Instagram</h3>
+                        <p>@visionmediaworks</p>
+                        <a href="https://www.instagram.com/visionmediaworks/" target="_blank" class="contact-link">Follow Me</a>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Restaurant Name</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Select Service</option>
+                            <option value="photography">Food Photography</option>
+                            <option value="social-media">Social Media Management</option>
+                            <option value="branding">Restaurant Branding</option>
+                            <option value="package">Complete Package</option>
+                        </select>
+                        <label for="service">Service Needed</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Tell me about your restaurant and goals</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Get Free Quote
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="img/Vision.png" alt="Vision Marketing" class="footer-logo">
+                    <h3>Vision Marketing</h3>
+                    <p>London's premier restaurant photography and social media marketing specialist.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/visionmediaworks/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Food Photography</a></li>
+                        <li><a href="#services">Social Media Management</a></li>
+                        <li><a href="#services">Restaurant Branding</a></li>
+                        <li><a href="#location">London Coverage</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +44 20 7123 FOOD</li>
+                        <li><i class="fas fa-envelope"></i> hello@visionmarketing.london</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Greater London Area</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vision Marketing - Restaurant Photography & Marketing Specialist | London</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
